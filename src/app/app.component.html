@@ -1,5 +1,25 @@
-<h1> {{texto}}</h1>
+<select *ngIf="cidadeSelecionada" class="form-control floating-panel" [(ngModel)]="cidadeSelecionada"
+[value]="cidadeSelecionada?.nome"
+(change)="onChangeCidade($event)">
+  <option *ngFor="let cidade of cidades" [value]="cidade.nome"  >
+    {{cidade.nome | uppercase}}
+  </option>
+</select>
 
-<agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
-  <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+
+<agm-map [(latitude)]="cidadeSelecionada.lat" [zoom]="zoom" [(longitude)]="cidadeSelecionada.lng">
+  <div *ngFor="let escola of escolas">
+    <agm-marker [label]="escola.nome" [latitude]="escola.lat" [longitude]="escola.lng">
+      <agm-info-window>
+        <div class="card border-light mb-3" style="max-width: 20rem;">
+          <div class="card-header">{{escola.nome}}</div>
+          <div class="card-body">
+            <p class="card-text"> <b>Distância do NRE:</b>
+              <span class="badge badge-danger"> {{escola.distanciaNre}}</span></p>
+              <p><a [href]="escola.site" target="_blank" class="alert-link">Consulta Escola</a></p>
+          </div>
+        </div>
+      </agm-info-window>
+    </agm-marker>
+  </div>
 </agm-map>
