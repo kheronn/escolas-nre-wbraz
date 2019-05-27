@@ -1,17 +1,9 @@
-<ngx-spinner
-bdOpacity = 0.9
-bdColor = "#333"
-size = "medium"
-color = "#fff"
-type = "pacman"
-[fullScreen] = "true"
->
-<p style="color: white" > Carregando ... </p>
+<ngx-spinner bdOpacity=0.9 bdColor="#333" size="medium" color="#fff" type="pacman" [fullScreen]="true">
+  <p style="color: white"> Carregando ... </p>
 </ngx-spinner>
 <select *ngIf="cidadeSelecionada" class="form-control floating-panel" [(ngModel)]="cidadeSelecionada"
-[value]="cidadeSelecionada?.nome"
-(change)="onChangeCidade($event)">
-  <option *ngFor="let cidade of cidades" [value]="cidade.nome"  >
+  [value]="cidadeSelecionada?.nome" (change)="onChangeCidade($event)">
+  <option *ngFor="let cidade of cidades" [value]="cidade.nome">
     {{cidade.nome | uppercase}}
   </option>
 </select>
@@ -26,10 +18,13 @@ type = "pacman"
           <div class="card-body">
             <p class="card-text"> <b>Distância do NRE:</b>
               <span class="badge badge-danger"> {{escola.distanciaNre}}</span></p>
-              <p><a [href]="escola.site" target="_blank" class="alert-link">Consulta Escola</a></p>
+            <p><a [href]="escola.site" target="_blank" class="alert-link">Consulta Escola</a></p>
           </div>
         </div>
       </agm-info-window>
     </agm-marker>
   </div>
 </agm-map>
+<button *ngIf="this.pwa.promptEvent" (click)="installPwa()">
+  Install
+</button>
