@@ -1,3 +1,13 @@
+<ngx-spinner
+bdOpacity = 0.9
+bdColor = "#333"
+size = "medium"
+color = "#fff"
+type = "pacman"
+[fullScreen] = "true"
+>
+<p style="color: white" > Carregando ... </p>
+</ngx-spinner>
 <select *ngIf="cidadeSelecionada" class="form-control floating-panel" [(ngModel)]="cidadeSelecionada"
 [value]="cidadeSelecionada?.nome"
 (change)="onChangeCidade($event)">
