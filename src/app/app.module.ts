@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AgmCoreModule } from '@agm/core';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     NgxSpinnerModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCqIm6LJ1bRL5oi0rsW5KVbj18Xre9wSXE'
-    })
+    }),
+    ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
