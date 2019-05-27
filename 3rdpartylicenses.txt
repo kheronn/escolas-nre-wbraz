@@ -306,6 +306,9 @@ THE SOFTWARE.
 ngx-spinner
 MIT
 
+@angular/service-worker
+MIT
+
 zone.js
 MIT
 The MIT License

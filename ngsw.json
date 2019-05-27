@@ -1,0 +1,77 @@
+{
+  "configVersion": 1,
+  "index": "https://kheronn.github.io/escolas-nre-wbraz/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://kheronn.github.io/escolas-nre-wbraz/favicon.ico",
+        "https://kheronn.github.io/escolas-nre-wbraz/index.html",
+        "https://kheronn.github.io/escolas-nre-wbraz/main.d34cd4eee24e5cd39600.js",
+        "https://kheronn.github.io/escolas-nre-wbraz/polyfills.7037a817a5bb670ed2ca.js",
+        "https://kheronn.github.io/escolas-nre-wbraz/runtime.ec2944dd8b20ec099bf3.js",
+        "https://kheronn.github.io/escolas-nre-wbraz/styles.2f5846560770697e7ea9.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://kheronn.github.io/escolas-nre-wbraz/assets/cidades.json",
+        "https://kheronn.github.io/escolas-nre-wbraz/assets/escolas.json",
+        "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-128x128.png",
+        "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-144x144.png",
+        "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-152x152.png",
+        "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-192x192.png",
+        "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-384x384.png",
+        "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-512x512.png",
+        "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-72x72.png",
+        "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-96x96.png",
+        "https://kheronn.github.io/escolas-nre-wbraz/assets/logo.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://kheronn.github.io/escolas-nre-wbraz/assets/cidades.json": "57c308e5faaa9a0b4ca7abddbe9c313b63230a5e",
+    "https://kheronn.github.io/escolas-nre-wbraz/assets/escolas.json": "a7a86de52d539af292a9ed940d9ce150f06a2fcd",
+    "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-128x128.png": "bcfe7fa372c5067c6907125b3ba3b2b66aa79547",
+    "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-144x144.png": "fbb0129fd63f59d625b8896b6f93acd1ab2b8df4",
+    "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-152x152.png": "89ee1ac9bec666fb20ac09dc913f3ceecb8f4357",
+    "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-192x192.png": "12895b85e9b4dbd476dfd3ed74c0417acb3eeada",
+    "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-384x384.png": "12895b85e9b4dbd476dfd3ed74c0417acb3eeada",
+    "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-512x512.png": "12895b85e9b4dbd476dfd3ed74c0417acb3eeada",
+    "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-72x72.png": "9abfd53c068e9b8f4a1c41fba5897e5c2b3a7940",
+    "https://kheronn.github.io/escolas-nre-wbraz/assets/icons/icon-96x96.png": "3f7f966a766f53ad56ed7fdc787da9d5c03d9d2c",
+    "https://kheronn.github.io/escolas-nre-wbraz/assets/logo.png": "b4cd725fda254023ade7f7c8e53765c43356b7c1",
+    "https://kheronn.github.io/escolas-nre-wbraz/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://kheronn.github.io/escolas-nre-wbraz/index.html": "4789d725c6211ff7612998e32a85ac5d37ce77cc",
+    "https://kheronn.github.io/escolas-nre-wbraz/main.d34cd4eee24e5cd39600.js": "8179fd3d14d0d7d1dd032dfc4f613a360e5abe60",
+    "https://kheronn.github.io/escolas-nre-wbraz/polyfills.7037a817a5bb670ed2ca.js": "6946e10a03311677a01490b8e91741668e64e17e",
+    "https://kheronn.github.io/escolas-nre-wbraz/runtime.ec2944dd8b20ec099bf3.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "https://kheronn.github.io/escolas-nre-wbraz/styles.2f5846560770697e7ea9.css": "d51d53645765f65c8f0bfdce58114ae64b059fb8"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
