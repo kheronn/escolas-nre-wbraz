@@ -144,10 +144,31 @@
     "site": ""
   },
   {
+    "nome": "CE Maria Isabel Guimarães",
+    "lat": -23.917771,
+    "lng": -49.655789,
+    "distanciaNre": "20,2 KM",
+    "site": ""
+  },
+  {
+    "nome": "EE do Campo Maria Anésia Dias",
+    "lat": -23.9886508,
+    "lng": -49.6623626,
+    "distanciaNre": "30,6 KM",
+    "site": ""
+  },
+  {
+    "nome": "EE Newton Sampaio",
+    "lat": -23.9211011,
+    "lng": -49.6643913,
+    "distanciaNre": "19, 8 KM",
+    "site": ""
+  },
+  {
     "nome": "E. E. B. São José",
     "lat": -23.9192021,
     "lng": -49.654859,
-    "distanciaNre": "19, 9, 6 KM",
+    "distanciaNre": "19, 6 KM",
     "site": ""
   },
   {
